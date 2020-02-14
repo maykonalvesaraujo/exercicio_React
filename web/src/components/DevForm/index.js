@@ -1,4 +1,4 @@
-import React { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 
 function DevForm({ onSubmit }) {
   const [github_username, setGithubUsername] = useState("");
@@ -18,7 +18,7 @@ function DevForm({ onSubmit }) {
         console.log(err);
       },
       {
-        timeout: 30000,
+        timeout: 30000
       }
     );
   }, []);
@@ -33,10 +33,8 @@ function DevForm({ onSubmit }) {
       longitude
     });
 
-
     setGithubUsername("");
     setTechs("");
-
   }
 
   return (
